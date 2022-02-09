@@ -1,0 +1,325 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: black; */
+}
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.twitter{
+  display: flex;
+}
+
+.sidebar{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  border-right: 1px solid #e6ecf0;
+  
+}
+
+.sidebar li{
+  list-style: none;
+  
+}
+
+.sidebar a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: flex-end;
+  padding: 15px;
+  font-size: 20px ;
+  font-weight: 350;
+}
+
+.sidebar a:hover{
+  background-color: #e8f5fe;
+  display: inline-flex;
+  border-radius: 36px;
+}
+
+.sidebar .logo{
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+.sidebar .twitter-logo{
+  color: #1da1f2;
+  font-size: 30px;
+  text-align: center;
+
+}
+.sidebar .tweet-button{
+  border-radius: 24px;
+  background-color: #1da1f2;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 12px;
+}
+
+.sidebar .tweet-button:hover{
+  background-color: #1d7ebb !important;
+  display: flex;
+  border-radius: 24px;
+}
+
+/* Main Feed Styling */
+.feeds{
+  width: 40%;
+  margin-left: 25%;
+  border-right: 1px solid #e6ecf0;
+}
+.create-tweet {
+  border-bottom: 2px solid #e6ecf0;
+}
+.feed-home{
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.create-first{
+  margin-left: 6px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.create-tweet-dp img{
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.create-inputfield{
+  margin-left: 10px;
+  width: 100%;
+  
+}
+.create-inputfield .inputbox{
+  width: 100%;
+  height: 100%;
+  padding: 25px 0px;
+  border: none;
+  font-size: 20px;
+}
+.create-second{
+  display: flex;
+  align-items: center;
+}
+
+
+.create-logo{
+  display: flex;
+  width: 30%;
+  /* justify-content: center; */
+  justify-content: space-around;
+  margin-left: 10%;
+  padding: 15px;
+}
+.create-logo a{
+  font-size: 18px;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.create-tweet-btn{
+  width: 60%;
+  text-align: right;
+  padding: 5px 20px;
+
+}
+.create-tweet-btn a{
+  text-decoration: none;
+  display: inline-flex;
+  background-color: #1da1f2;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 36px;
+}
+
+/* trending section */
+.trend{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trend-search{
+  margin-left: 8%;
+  margin-top: 5px;
+}
+
+.trend-search input{
+  width: 100%;
+  padding: 16px;
+  border-radius: 36px;
+  border: none;
+  background-color: rgb(244, 247, 248) ;
+}
+
+.trends-for-you{
+  display: flex;
+  align-items: center;
+  margin-left: 8%;
+  margin-top: 25px;
+  background-color: rgb(244, 247, 248) ;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+.trend-headline {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.settings-logo{
+  width: 50%;
+  text-align: right;
+}
+
+.settings-logo a{
+  font-size: 20px;
+  color: black;
+  padding: 8px;
+}
+.trend-content{
+  /* margin-top: 10px; */
+  /* padding: 6px; */
+  width: 100%;
+}
+
+.first-trending{
+  padding: 10px 16px;
+}
+.first-trending span{
+  font-size: 13px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: gray;
+}
+
+.first-trending:hover{
+  background-color: rgb(218, 227, 230) ;
+  border-radius: 8px;
+}
+
+.hashtag{
+  font-size: 16px;
+  font-weight: 650;
+  margin-top: -5px;
+}
+.trending-topic-more{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-more a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1da1f2;
+}
+.more-btn a{
+  padding: 6px;
+  color: black;
+}
+.more-btn a :hover{
+  background-color:#8eb9d4;
+  color: #1da1f2;
+  border-radius: 50%;
+}
+.settings-logo a:hover{
+  background-color: rgb(218, 227, 230) ;
+  border-radius: 50%;
+}
+
+/* Who to Follow */
+
+.follow{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  margin-top: 25px;
+  background-color: rgb(244, 247, 248) ;
+  border-radius: 16px;
+  /* padding: 12px; */
+  font-size: 14px;
+}
+.follow h2{
+  padding: 12px;
+}
+.follow-list{
+  /* padding: 6px; */
+  /* margin-top: 10px; */
+}
+
+.first-follow{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 12px 16px;
+  
+}
+.first-follow:hover{
+  background-color: rgb(218, 227, 230) ;
+  border-radius: 8px;
+}
+
+.follow-dp img{
+  max-width: 50px;
+  border-radius: 50%;
+}
+.follow-info{
+  width: 60%;
+  /* text-align: center; */
+  padding-left: 10px;
+}
+
+.follow-follow{
+  padding-left: 10px;
+}
+.follow-follow a{
+  text-decoration: none;
+  background-color: black;
+  padding:8px 16px ;
+  color: white;
+  border-radius: 24px;
+  font-weight: 600;
+}
+.follow-follow a:hover{
+  background-color: rgb(51, 49, 49);
+}
+
+.terms-and-condition{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  margin-top: 25px;
+  align-items: center ;
+  margin-bottom: 100px;
+}
+.terms-and-condition a{
+  padding: 2px 8px;
+  font-size: 12px;
+  text-decoration: none ;
+  color: grey;
+}
+.copyright{
+  width: 100%;
+  font-size: 12px;
+  color: grey;
+  padding: 2px 8px;
+}
+.terms-and-condition a:hover{
+  text-decoration: underline;
+}
