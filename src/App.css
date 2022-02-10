@@ -151,12 +151,16 @@ body{
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-height: 100px;
+  
+  
 }
 
 .trend-search{
   margin-left: 8%;
   margin-top: 5px;
+  /* width: 100%; */
+  /* position: fixed; */
 }
 
 .trend-search input{
@@ -175,6 +179,7 @@ body{
   background-color: rgb(244, 247, 248) ;
   border-radius: 16px;
   flex-wrap: wrap;
+  
 }
 .trend-headline {
   padding: 12px;
@@ -322,4 +327,114 @@ body{
 }
 .terms-and-condition a:hover{
   text-decoration: underline;
+}
+.posts{
+  padding: 15px 20px;
+  display: flex;
+  border-bottom: 1px solid #e6ecf0;
+}
+.posts:hover{
+  background-color:rgb(244, 247, 248);
+}
+
+.post-dp img{
+  max-width: 50px;
+  border-radius: 50%;
+}
+.post-details{
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  width: 100%;
+}
+.post-row{
+  display: flex;
+  justify-content: space-between;
+}
+.post-head{
+  display: flex;
+  align-items: center;
+  
+}
+.post-first{
+  padding-left:4px ;
+}
+.post-name a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.post-name a:hover{
+  text-decoration: underline;
+}
+.post-badge{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  /* margin-left: -4px; */
+  color: #1da1f2;
+}
+.post-username {
+  color: grey;
+  font-size: 16px;
+}
+.post-time{
+  color: grey;
+}
+.post-more-opt{
+  font-size: 18px;
+  color: gray;
+}
+.post-more-opt:hover{
+  color: #1da1f2;
+  background-color:#b3d8f0;
+  border-radius: 50%;
+}
+.post-tweet{
+  padding: 5px 0;
+  font-size: 15px;
+}
+.post-react{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.react{
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  color: gray;
+}
+.react span{
+  padding-left: 12px;
+  font-size: 14px;
+}
+.post-comment:hover{
+  color: #1da1f2;
+  background-color:#dfedf7;
+  border-radius: 50%;
+}
+.post-retweet:hover{
+  color: #1dbb7e;
+  background-color: #c8ecde;
+  border-radius: 50%;
+}
+.post-like:hover{
+  color: #c42c2c;
+  background-color:#ecd5d5 ;
+  border-radius: 50%;
+}
+
+.post-share:hover{
+  color: #1da1f2;
+  background-color:#dfedf7;
+  border-radius: 50%;
+}
+.post-photo{
+  margin:12px 0;
+  
+}
+.post-photo img{
+  width: 80%;
+  border-radius: 24px;
 }
